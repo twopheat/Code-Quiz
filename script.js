@@ -1,3 +1,2 @@
-function myFunction() {
-    document.getElementById("#info").innerHTML = "Hello JavaScript!";
-  }
+document.getElementById("qText").innerHTML = "qText here is a question of about two sentences, a little here, some there?";
+  

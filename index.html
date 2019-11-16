@@ -3,31 +3,40 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Code Quiz</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery.js"></script>
     </head>
+    <header>
+        <div class="score pl-4 float-left">score</div>
+        <div class="time pr-4 float-right">time</div>
+    <br>
+    </header>
 
     <body>
         <div class="container">
+          <div class="card mt-3 p-2">
             <div class="row">
-                 <div class="col-md-10">
-                   <h1 class="text-center pt-3">CODE QUIZ</span>
+                 <div class="col-lg-10">
+                   <h1 class="text-center">CODE QUIZ</span>
+                    <br>
+                    <br>
                  </div>
             </div>
-            <div class="questions row">questions
-                <h3 id="qText">qText</h3>
+            <div class="questions col-lg-10">
+                <h5 id="qText" class="ml-3"></h5>
             </div>
-            <div class="answers row pl-10">answers
-              <div class="col-md-10">
-                <button class="btn btn-primary btn-sm buttonA">A word</button></br>
-                <button class="btn btn-warning btn-sm buttonB">B answer</button></br>
-                <button class="btn btn-success btn-sm buttonC">C text</button></br>
-                <button class="btn btn-danger btn-sm buttonD">D choice</button></br>
+            
+            <div class="row">
+              <div class="col-lg ml-5">
+                <button class="btn btn-primary m-1 btn-sm buttonA">A word</button><br>
+                <button class="btn btn-warning m-1 btn-sm buttonB">B answer</button><br>
+                <button class="btn btn-success m-1 btn-sm buttonC">C text</button><br>
+                <button class="btn btn-danger m-1 btn-sm buttonD">D choice</button><br>
               </div>
             </div>
+          </div>
         </div>
 
 
@@ -37,7 +46,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="/script.js";></script>
+    <script src="script.js";></script>
     </body>
 
 </html>
