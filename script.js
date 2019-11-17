@@ -1,9 +1,9 @@
-var promptS = document.querySelector("#qText");
+var playarea = document.querySelector("#playarea");
 var time = document.querySelector(".time");
 var score = document.querySelector(".score");
-var report = document.querySelector("#report");
 var start = document.querySelector("#start");
-
+var reportright = document.querySelector("#reportright");
+var reportwrong = document.querySelector("#reportwrong");
 
 var questions = ["Commonly used data types DO NOT include:","The condition in an if / else statement is enclosed within ____.","A Rarely used data type may be:","The parameters in a function are enclosed within ____."];
 var choices1 = ["strings", "booleans", "alerts", "numbers"];
@@ -34,7 +34,7 @@ playareanoShow();
 //-------------------------------------------------
 
 //Quiz Functions, had to piggyback 4 of them, as i was unable to get the array going like I wanted
-function startQuiz() {
+function startQuiz1() {
    for (var i=0;i<questions.length;i++) {
        document.getElementById("qText").innerHTML = questions[0];
        document.getElementById("A").innerHTML = choices1[0];
@@ -80,55 +80,32 @@ function startQuiz2() {
      }
  };
 
- function startQuiz3() {
-    for (var i=0;i<questions.length;i++) {
-        document.getElementById("qText").innerHTML = questions[2];
-        document.getElementById("A").innerHTML = choices3[0];
-        document.getElementById("B").innerHTML = choices3[1];
-        document.getElementById("C").innerHTML = choices3[2];
-        document.getElementById("D").innerHTML = choices3[3];
-        $("#A").on("click", function() {
-         wrong();
-        });
-        $("#B").on("click", function() {
-         wrong();
-        });
-        $("#C").on("click", function() {
-         wrong();
-        });
-        $("#D").on("click", function() {
-         correct();
-         setTimeout(startQuiz4, 500);
-        });
-     }
- };
-
- function startQuiz4() {
-    for (var i=0;i<questions.length;i++) {
-        document.getElementById("qText").innerHTML = questions[3];
-        document.getElementById("A").innerHTML = choices4[0];
-        document.getElementById("B").innerHTML = choices4[1];
-        document.getElementById("C").innerHTML = choices4[2];
-        document.getElementById("D").innerHTML = choices4[3];
-        $("#A").on("click", function() {
-         correct();         
-        });
-        $("#B").on("click", function() {
-         wrong();
-        });
-        $("#C").on("click", function() {
-         wrong();
-        });
-        $("#D").on("click", function() {
-         wrong();
-        });
-     }
- };   
+function startQuiz3() {
+   for (var i=0;i<questions.length;i++) {
+       document.getElementById("qText").innerHTML = questions[2];
+       document.getElementById("A").innerHTML = choices3[0];
+       document.getElementById("B").innerHTML = choices3[1];
+       document.getElementById("C").innerHTML = choices3[2];
+       document.getElementById("D").innerHTML = choices3[3];
+       $("#A").on("click", function() {
+        wrong();
+       });
+       $("#B").on("click", function() {
+        wrong();
+       });
+       $("#C").on("click", function() {
+        wrong();
+       });
+       $("#D").on("click", function() {
+        correct();
+       });
+    }
+}
 
 
 // This is my Start button click event listener, begins function, hides button div, shows playarea
 $("#start").on("click", function() {
-    startQuiz();
+    startQuiz1();
     start.style.display = "none";
     playarea.style.display = "block";
 });
