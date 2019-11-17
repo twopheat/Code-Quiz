@@ -6,34 +6,33 @@
         <title>Code Quiz</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
     <header>
-        <div class="score pl-4 float-left">score</div>
+        <div class="score pl-4 float-left bold blue">score</div>
         <div class="time pr-4 float-right">time</div>
     <br>
     </header>
 
     <body>
         <div class="container">
-          <div class="card mt-3 p-2">
+          <div class="card mt-3 p-2 shadow-sm">
             <div class="row">
-                 <div class="col-lg-10">
-                   <h1 class="text-center">CODE QUIZ</span>
-                    <br>
-                    <br>
+                 <div class="col-lg-8">
+                   <h1 class="text-center mt-2 pb-2">CODE QUIZ</span>
+                    
                  </div>
             </div>
-            <div class="questions col-lg-10">
+            <div class="col-lg-10 pb-2">
                 <h5 id="qText" class="ml-3"></h5>
             </div>
             
             <div class="row">
-              <div class="col-lg ml-5">
-                <button class="btn btn-primary m-1 btn-sm buttonA">A word</button><br>
-                <button class="btn btn-warning m-1 btn-sm buttonB">B answer</button><br>
-                <button class="btn btn-success m-1 btn-sm buttonC">C text</button><br>
-                <button class="btn btn-danger m-1 btn-sm buttonD">D choice</button><br>
+              <div class="col-lg buttons ml-5">
+                <button class="btn btn-primary m-1 btn-sm buttonA shadow-sm" id="A"></button><br>
+                <button class="btn btn-warning m-1 btn-sm buttonB shadow-sm" id="B"></button><br>
+                <button class="btn btn-success m-1 btn-sm buttonC shadow-sm" id="C"></button><br>
+                <button class="btn btn-danger m-1 btn-sm buttonD shadow-sm" id="D"></button><br>
               </div>
             </div>
           </div>
