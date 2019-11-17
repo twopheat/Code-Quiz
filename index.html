@@ -18,24 +18,29 @@
         <div class="container">
           <div class="card mt-3 p-2 shadow-sm">
             <div class="row">
-                 <div class="col-lg-8">
+                 <div class="col-lg-12">
                    <h1 class="text-center mt-2 pb-2">CODE QUIZ</span>
+                    <br>
+            <button class="start btn btn-secondary m-1 btn-sm col-sm-2" id="start">Click here to Start</button>
                     
                  </div>
             </div>
-            <div class="col-lg-10 pb-2">
+           <div id="playarea" class="row hidden">
+            <div class="col-lg-12 pb-2">
                 <h5 id="qText" class="ml-3"></h5>
             </div>
             
             <div class="row">
-              <div class="col-lg buttons ml-5">
+              <div id="buttonZ" class="col-lg buttons ml-5">
                 <button class="btn btn-primary m-1 btn-sm buttonA shadow-sm" id="A"></button><br>
                 <button class="btn btn-warning m-1 btn-sm buttonB shadow-sm" id="B"></button><br>
                 <button class="btn btn-success m-1 btn-sm buttonC shadow-sm" id="C"></button><br>
                 <button class="btn btn-danger m-1 btn-sm buttonD shadow-sm" id="D"></button><br>
               </div>
+              <div class="col-md-3 pl-5 strong text-danger" id="reportwrong"></div>
+              <div class="col-md-3 pl-5 strong text-success" id="reportright"></div>
             </div>
-            <button class="start btn btn-secondary m-1 btn-sm" id="start"></button>
+          </div>
           </div>
         </div>
 
@@ -43,7 +48,7 @@
         
 
     
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="script.js";></script>
